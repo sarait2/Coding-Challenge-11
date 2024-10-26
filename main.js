@@ -17,10 +17,12 @@ function updateTotalPrice() {
     
     totalPriceElement.textContent = totalPrice.toFixed(2);
 }
+// Calculate and update total price dynamically based on product and quantity
+
 // TASK 2 - Add Event Listener
 productSelector.addEventListener('change', updateTotalPrice);
 quantityInput.addEventListener('input', updateTotalPrice);
-
+//Add event listener for product selection and quantity input
 
 //Task 4 - Handle Order Submission
 // Handle order submission
@@ -31,3 +33,4 @@ placeOrderButton.addEventListener('click', function() {
     
     orderSummary.textContent = `You ordered ${quantity} of ${selectedProduct}. Total price: $${totalPrice}`;
 });
+//Handle order submission and display order summary
